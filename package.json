@@ -4,7 +4,7 @@
   "description": "Batch requests together to GET \"api/multi?params\" where params are paths to resources. E.g users=api/users&countires=api/countries",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha test/app.js"
   },
   "repository": {
     "type": "git",
