@@ -68,17 +68,17 @@ describe('GET /api/users', function(){
   })
 })
 
-describe('GET ?users=api/users&customer=api/customers/21&countries=api/countries', function(){
-  this.timeout(15000);
-  it('respond with multi', function(done){
-    request(app)
-      .get('/api/multi?users=api/users&customer=api/customers/21&countries=api/countries')
-      .expect(200)
-      .end(function(err, res){
-        if (err) return done(err);
-        console.log(res.body)
-        res.body.should.have.properties('users', 'customers', 'countries');
-        done()
-      });
-  })
-})
+// describe('GET ?users=api/users&customer=api/customers/21&countries=api/countries', function(){
+//   this.timeout(15000);
+//   it('respond with multi', function(done){
+//     request(app)
+//       .get('/api/multi?users=api/users&customer=api/customers/21&countries=api/countries')
+//       .expect(200)
+//       .end(function(err, res){
+//         if (err) return done(err);
+//         console.log(res.body)
+//         res.body.should.have.properties('users', 'customers', 'countries');
+//         done()
+//       });
+//   })
+// })
