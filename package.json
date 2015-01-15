@@ -1,0 +1,37 @@
+{
+  "name": "multireq",
+  "version": "0.0.5",
+  "description": "Batch requests together to GET \"api/multi?params\" where params are paths to resources. E.g users=api/users&countires=api/countries",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isenbeqiri/multireq"
+  },
+  "keywords": [
+    "batch",
+    "requests.",
+    "multiple requests combined"
+  ],
+  "author": "Isen Beqiri <isenbeqiri@gmail.comnpm adduser>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isenbeqiri/multireq/issues"
+  },
+  "homepage": "https://github.com/isenbeqiri/multireq",
+  "dependencies": {
+    "body-parser": "~1.10.1",
+    "cookie-parser": "~1.3.3",
+    "express": "~4.10.6",
+    "mocha": "^2.1.0",
+    "request": "^2.51.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "morgan": "^1.5.1",
+    "should": "^4.6.0",
+    "supertest": "^0.15.0"
+  }
+}
