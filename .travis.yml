@@ -1,0 +1,1 @@
+script: "mocha test/app.js"
