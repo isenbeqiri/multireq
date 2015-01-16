@@ -7,7 +7,8 @@ router.get( '/', function( req, res, next ) {
   var port = req.app.settings.port || 3003,
       baseUrl = 'http://localhost:' + port + '/', // the base url for the localhost request that we are about to make
       requests = Object.keys(req.query), // we create an array for all the 
-      index = 0,
+      index = 0;
+      
       res.data = {};
 
   var callRequest = function() {
