@@ -35,7 +35,7 @@ Install with:
 
     npm install multireq
 
-## How do I use it?
+## How to use it?
 
 After you install, just include the module in your express app with the follwing line:
 
