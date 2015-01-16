@@ -1,7 +1,7 @@
 {
   "name": "multireq",
-  "version": "0.0.7",
-  "description": "Batch requests together to GET \"api/multi?params\" where params are paths to resources. E.g users=api/users&countires=api/countries",
+  "version": "0.0.8",
+  "description": "An express middleware to allow sending a (fake) batch requests. A batch request consists of multiple API calls combined into one HTTP request.",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/app.js"
