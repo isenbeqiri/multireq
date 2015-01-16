@@ -1,7 +1,5 @@
 # Multireq [![Build Status](https://travis-ci.org/isenbeqiri/multireq.svg?branch=master)](https://travis-ci.org/isenbeqiri/multireq)
 
-Download via [NPM](http://npmjs.org)
-
 [![NPM](https://nodei.co/npm/multireq.png)](https://nodei.co/npm/multireq/)
 =============
 
