@@ -4,7 +4,7 @@
   "description": "An express middleware to allow sending a (fake) batch requests. A batch request consists of multiple API calls combined into one HTTP request.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/app.js"
+    "test": "mocha tests/test.js"
   },
   "repository": {
     "type": "git",
