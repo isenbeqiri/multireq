@@ -16,7 +16,8 @@ router.get( '/', function( req, res, next ) {
   var callRequest = function() {
     var key = requests[index],
         requestUrl = baseUrl + req.query[key]; // build the request URL for the first param. 
-    // Reques
+
+    // Using 'request' to make the local sub request to the API
     request( requestUrl, function( error, response, body ) {
       index++;
 
