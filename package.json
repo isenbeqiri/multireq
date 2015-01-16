@@ -1,6 +1,6 @@
 {
   "name": "multireq",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "An express middleware to allow sending a (fake) batch requests. A batch request consists of multiple API calls combined into one HTTP request.",
   "main": "index.js",
   "scripts": {
