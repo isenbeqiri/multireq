@@ -9,6 +9,7 @@ router.get( '/', function( req, res, next ) {
       requests = Object.keys(req.query), // we create an array for all the 
       index = 0;
 
+      // Empty data object. Here we will collect the response from every local request and throw it to the user.
       res.data = {};
   
   // Now that we have all the endpoints, we call them locally and store them into res.data object
