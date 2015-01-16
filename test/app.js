@@ -25,8 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('/api/users', function(req, res){
-	console.log("Hello world")
-  res.send([
+	res.send([
   	{id:'1', name: 'Alan'},
 		{id:'2', name: 'Jacob'},
 		{id:'3', name: 'Isen'}
@@ -42,7 +41,7 @@ app.get('/api/customers', function(req, res){
 });
 
 app.get('/api/customers/:id', function(req, res){
-  res.end({
+  res.json({
   	id:'23', name: 'Dummy Customer'
   })
 });
@@ -71,16 +70,15 @@ describe('GET /api/users', function(){
   })
 })
 
-// describe('GET ?users=api/users&customer=api/customers/21&countries=api/countries', function(){
-//   this.timeout(15000);
-//   it('respond with multi', function(done){
-//     request.get('http://localhost:3003/api/multi?users=api/users&customer=api/customers/21&countries=api/countries')
-//       .expect(200)
-//       .end(function(err, res){
-//         if (err) return done(err);
-//         console.log(res.body)
-//         res.body.should.have.properties('users', 'customers', 'countries');
-//         done()
-//       });
-//   })
-// })
+describe('GET ?users=api/users&customer=api/customers/21&countries=api/countries', function(){
+  this.timeout(15000);
+  it('respond with multi', function(done){
+    request.get('/api/multi?users=api/users&customer=api/customers/21&countries=api/countries')
+      .expect(200)
+      .end(function(err, res){
+        if (err) return done(err);
+        res.body.should.have.properties('users', 'customer', 'countries');
+        done()
+      });
+  })
+})

@@ -14,7 +14,6 @@ router.get('/', function(req, res, next) {
     requestUrl = baseUrl + req.query[key]
 
     request( requestUrl, function (error, response, body) {
-      console.log(error, response, body)
       index++;
       if (!error && response.statusCode == 200) {
         res.data[key] = JSON.parse(body);
