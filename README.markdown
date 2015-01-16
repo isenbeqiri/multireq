@@ -3,9 +3,12 @@
 
 [![Build Status](https://travis-ci.org/isenbeqiri/multireq.svg?branch=master)](https://travis-ci.org/isenbeqiri/multireq)
 
-Download via [NPM](http://npmjs.org)
-[![NPM](https://nodei.co/npm/multireq.png)](https://nodei.co/npm/multireq/)
+=============
 
+Download via [NPM](http://npmjs.org)
+
+[![NPM](https://nodei.co/npm/multireq.png)](https://nodei.co/npm/multireq/)
+=============
 
 A very simple express middleware for batching HTTP requests. The idea is to make http request from the client in one batch, so we reduce the number of HTTP request coming from the SPA and return all the requested information into a single JSON object. The middleware will take the request to a defined path (e.g 'api/multi?[params]) and then it will make the app do the request localy. By doing this, we do not need to know anything about the express app, just the endpoints where we can get the information from. 
 
