@@ -11,9 +11,9 @@ A very simple express middleware for batching HTTP requests. The idea is to make
 
 For example. If we have an express app that has the following endpoints:
 
-    GET api/users
-    GET api/customers/:id
-    GET api/countries
+    GET api\/users
+    GET api\/customers\/:id
+    GET api\/countries
 
 And we want to make only one HTTP request to get all the information in a batch, then this middleware will allow us to do the following:
 
