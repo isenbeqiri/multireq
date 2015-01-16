@@ -3,7 +3,7 @@ var router = express.Router();
 var request = require('request');
 
 router.get('/', function(req, res, next) {
-  var port = req.app.settings.port || 80;
+  var port = req.app.settings.port || 3003;
   var baseUrl = baseUrl = 'http://localhost:' + port + '/';    
   requests = Object.keys(req.query)
   index = 0;

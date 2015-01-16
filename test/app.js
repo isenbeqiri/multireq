@@ -55,10 +55,13 @@ app.get('/api/countries', function(req, res){
   ])
 });
 
+app.listen(3003);
+request = request('http://localhost:3003');
+
+
 describe('GET /api/users', function(){
   it('respond with json', function(done){
-    request(app)
-      .get('/api/users')
+    request.get('/api/users')
       .expect(200)
       .end(function(err, res){
         if (err) return done(err);
@@ -71,8 +74,7 @@ describe('GET /api/users', function(){
 // describe('GET ?users=api/users&customer=api/customers/21&countries=api/countries', function(){
 //   this.timeout(15000);
 //   it('respond with multi', function(done){
-//     request(app)
-//       .get('/api/multi?users=api/users&customer=api/customers/21&countries=api/countries')
+//     request.get('http://localhost:3003/api/multi?users=api/users&customer=api/customers/21&countries=api/countries')
 //       .expect(200)
 //       .end(function(err, res){
 //         if (err) return done(err);
