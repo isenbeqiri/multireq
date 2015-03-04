@@ -1,4 +1,4 @@
-# Multireq [![Build Status](https://travis-ci.org/isenbeqiri/multireq.svg?branch=master)](https://travis-ci.org/isenbeqiri/multireq)
+# Multireq [![Build Status](https://travis-ci.org/tagisen/multireq.svg?branch=master)](https://travis-ci.org/isenbeqiri/multireq)
 
 [![NPM](https://nodei.co/npm/multireq.png)](https://nodei.co/npm/multireq/)
 =============
